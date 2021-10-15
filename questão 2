@@ -1,0 +1,36 @@
+public class clinica_medico {
+
+    public static void main(String[] args) {
+
+        Q2endereco end1 = new Q2endereco("81", "48850000", "Avenida Getúlio Vargas", "Próximo ao Banco do Brasil'", "Centro", "Itiúba", "BA");
+
+        Q2medico med1 = new Q2medico(1, "Amilton Dias de Andrade", "Masculino", "Cardiologista", end1);
+
+        System.out.println("\n\n-----------Dados do médico-----------");
+        System.out.println("Codigo: " + med1.codigo);
+        System.out.println("Nome: " + med1.nome);
+        System.out.println("Sexo: " + med1.sexo);
+        System.out.println("Especialidade: " + med1.especialidade);
+        System.out.println("\nEndereco:\n"+med1.getEndereco());
+
+        end1.numero = "46";
+        end1.cep = "4852000";
+        end1.rua = "Rua Gregório Ramos dos Santos";
+        end1.complemento = "Rua do Lipe'";
+        end1.bairro = "Jardim Santa Cecília";
+        end1.cidade = "Sorocaba";
+        end1.uf = "SP";
+
+        med1.codigo = 2;
+        med1.nome = "Felipe Oliveira Cavalcante";
+        med1.sexo = "Masculino";
+        med1.especialidade = "Cardiologista";
+
+        System.out.println("\n\n-----------Dados do médico-----------");
+        System.out.println("Codigo: " + med1.codigo);
+        System.out.println("Nome: " + med1.nome);
+        System.out.println("Sexo: " + med1.sexo);
+        System.out.println("Especialidade: " + med1.especialidade);
+        System.out.println("\nEndereco:\n"+med1.getEndereco());
+    }
+}
