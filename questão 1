@@ -1,16 +1,35 @@
-public class Paciente {
+public class Q1_paciente {
 
-    int codigo; String nome, dataNascimento, sexo, planoSaude, alergia, tipoSanguineo;
+    public static void main(String[] args) {
 
-    public Paciente(int cod, String nome, String data, String sexo, String planoSaude, String alergia, String tipo){
+        Q1_Paciente n1 = new Q1_Paciente(1, "Júlia Pereira de Andrade", "07/01/2004", "Feminino", "Padrão", "Ampissilina", "O+");
 
-        this.codigo = cod;
-        this.nome = nome;
-        this.dataNascimento = data;
-        this.sexo = sexo;
-        this.planoSaude = planoSaude;
-        this.alergia = alergia;
-        this.tipoSanguineo = tipo;
+        System.out.println("\nCodigo: " + n1.codigo);
+        System.out.println("Nome: " + n1.nome);
+        System.out.println("Data de nascimento: " + n1.dataNascimento);
+        System.out.println("Sexo: " + n1.sexo);
+        System.out.println("Plano de saúde: " + n1.planoSaude);
+        System.out.println("Alergia: " + n1.alergia);
+        System.out.println("Tipo Sanguíneo: " + n1.tipoSanguineo + "\n");
+
+        n1.codigo = n1.codigo + 1;
+        n1.nome = "Maria Janice Araújo Pereira de Andrade";
+        n1.dataNascimento = "04/01/1973";
+        n1.sexo = "Feminino";
+        n1.alergia = "Nenhuma";
+        n1.planoSaude = "Padrão";
+        n1.tipoSanguineo = "O+";
+
+        System.out.println("\nCodigo: " + n1.codigo);
+        System.out.println("Nome: " + n1.nome);
+        System.out.println("Data de nascimento: " + n1.dataNascimento);
+        System.out.println("Sexo: " + n1.sexo);
+        System.out.println("Plano de saúde: " + n1.planoSaude);
+        System.out.println("Alergia: " + n1.alergia);
+        System.out.println("Tipo Sanguíneo: " + n1.tipoSanguineo + "\n");
+
 
     }
 }
+    
+
