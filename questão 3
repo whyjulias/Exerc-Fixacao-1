@@ -1,0 +1,25 @@
+public class Q3_luta {
+
+    public static void main(String[] args){
+
+        Q3_lutador J= new Q3_lutador(100, 10, "J");
+        Q3_lutador F = new Q3_lutador(100, 12, "F");
+
+        J.aplicarGolpe(F);
+        J.aplicarGolpe(F);
+        J.aplicarGolpe(F);
+
+        System.out.println("Energia do "+F.nome+": "+F.energia);
+
+        F.aplicarGolpe(J);
+        F.aplicarGolpe(J);
+        F.aplicarGolpe(J);
+        F.aplicarGolpe(J);
+        F.aplicarGolpe(J);
+        F.aplicarGolpe(J);
+        F.aplicarGolpe(J);
+        F.aplicarGolpe(J);
+
+        System.out.println("Energia do "+J.nome+": "+J.energia);
+    }
+}
